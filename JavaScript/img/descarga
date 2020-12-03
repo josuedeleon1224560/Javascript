@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es-GT">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>miumg</title>
+
+<link rel="stylesheet" href="https://uvirtual.umg.edu.gt/pagos/assets/bootstrap.css"><link rel="stylesheet" href="https://uvirtual.umg.edu.gt/pagos/assets/custom.css">    
+    
+    <body class="bg-light">
+        <div id="app" class="container mt-3 mb-3">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="logo">
+    <p class="text-center">
+        <img src="https://uvirtual.umg.edu.gt/pagos/assets/logo.png">
+    </p>
+</div><div class="card">
+    <div class="card-header text-center">
+        <h4>Pagos con Tarjeta de&nbsp;Crédito&nbsp;y&nbsp;Débito</h4>
+    </div>
+    <div class="card-body">
+        <form method="POST" action="https://uvirtual.umg.edu.gt/pagos/" class="needs-validation" novalidate  data-sitekey="6LcA6_cUAAAAAPfgCR3n4_HttFw-5-LWYgOm4YC_" >
+                            <script src="https://www.google.com/recaptcha/api.js?render=6LcA6_cUAAAAAPfgCR3n4_HttFw-5-LWYgOm4YC_"></script>
+                <input name="_recaptcha" value="1" type="hidden">
+                        
+            <input name="_step" value="1" type="hidden">
+
+            <div class="row carne-universitario">
+    <div class="col-sm-4">
+        <label for="carrera">No. de Carné</label>
+        <input name="carrera" id="carrera" type="tel" required pattern="[0-9]{3,4}" data-mask="0000" inpumode="numeric" class="form-control" value="">
+        <div class="invalid-feedback">
+            Código de la carrera        </div>
+    </div>
+    <div class="col-sm-3">
+        <label>&nbsp;</label>
+        <input name="carne[anno]" type="tel" required pattern="[0-9]{2}" data-mask="00" inputmode="numeric" class="form-control" value="">
+        <div class="invalid-feedback">
+            Año 2-digitos        </div>
+    </div>
+    <div class="col-sm-5">
+        <label>&nbsp;</label>
+        <input name="carne[correlativo]" type="tel" required pattern="[0-9]{1,5}" data-mask="00000" inputmod="numeric" class="form-control" value="">
+        <div class="invalid-feedback">
+            Correlativo de hasta 5 dígitos        </div>
+    </div>
+</div>            <div class="row mt-3">
+    <div class="col-sm-12">
+        <label for="pago">Tipo de Pago</label>
+        <select name="pago" id="pago" required class="custom-select">
+            <option value="">Seleccione...</option>
+                        <option value="010" >010 - Inscripción ordinaria</option>
+                        <option value="201" >201 - Colegiatura cursos</option>
+                        <option value="202" >202 - Cursos libres idiomas intensivos UMG Campus Central</option>
+                        <option value="203" >203 - Cursos idiomas regular UMG Campus Central</option>
+                        <option value="204" >204 - Cursos ingles externos</option>
+                        <option value="205" >205 - Complemento Inscripción Ingles</option>
+                        <option value="206" >206 - Cursos Ingles Inten. Ext.</option>
+                        <option value="207" >207 - Cuota Laboratorio Inglés 20 Hrs.</option>
+                        <option value="222" >222 - Inglés Enfermería/Fisioterapia (Bimestre)</option>
+                        <option value="228" >228 - Curso francés bimestre. UMG</option>
+                        <option value="229" >229 - Inscripción anual francés</option>
+                        <option value="232" >232 - Inscripción bimestral alemán</option>
+                        <option value="260" >260 - Inglés docente facultad Ciencias Médicas y de la Salud</option>
+                        <option value="308" >308 - Evaluación especial</option>
+                        <option value="354" >354 - Curso idiomas regular UMG Centros Universitarios</option>
+                        <option value="355" >355 - Curso idiomas Intensivo UMG Centros Universitarios</option>
+                        <option value="408" >408 - Firma de título</option>
+                        <option value="410" >410 - Reposición carné</option>
+                        <option value="411" >411 - Certificación de cursos</option>
+                        <option value="413" >413 - Alquiler toga fuera U.</option>
+                        <option value="414" >414 - Alquiler toga padrino</option>
+                        <option value="453" >453 - Parqueo</option>
+                        <option value="476" >476 - Abono multa</option>
+                    </select>
+        
+        <div class="invalid-feedback">
+            Elija un tipo de pago para continuar        </div>
+    </div>
+</div>
+<div class="row mt-3 d-none">
+    <div class="col-sm-12">
+        <label for="certificacion-contrasenna">Contraseña de Certificación</label>
+        <input name="certificacion[contrasenna]" id="certificacion-contrasenna" type="text" class="form-control" value="">
+    </div>
+</div>            <div class="row mt-3 ciclo-academico">
+    <div class="col-sm-5">
+        <label for="ciclo-numero">Semestre/Trimestre</label>
+        <select name="ciclo[numero]" id="ciclo-numero" required class="custom-select">
+            <option value="">Seleccione...</option>
+                            <option value="1" >Primero</option>
+                            <option value="2" >Segundo</option>
+                            <option value="3" >Tercero</option>
+                            <option value="4" >Cuarto</option>
+                            <option value="5" >Quinto</option>
+                            <option value="6" >Sexto</option>
+                            <option value="7" >Séptimo</option>
+                            <option value="8" >Octavo</option>
+                            <option value="9" >Noveno</option>
+                            <option value="10" >Décimo</option>
+                    </select>
+        <div class="invalid-feedback">
+            Elija el semestre o trimestre        </div>
+    </div>
+    <div class="col-sm-7">
+        <label for="ciclo-anno">&nbsp;</label>
+        <select name="ciclo[anno]" id="ciclo-anno" required class="custom-select">
+            <option value="">Seleccione...</option>
+                            <option >2021</option>
+                            <option >2020</option>
+                            <option >2019</option>
+                            <option >2018</option>
+                            <option >2017</option>
+                            <option >2016</option>
+                            <option >2015</option>
+                            <option >2014</option>
+                            <option >2013</option>
+                            <option >2012</option>
+                            <option >2011</option>
+                            <option >2010</option>
+                    </select>
+        <div class="invalid-feedback">
+            Elija el año del Ciclo Académico        </div>
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-sm-12">
+        <label for="mes">Mes</label>
+        <select name="mes" id="mes" required class="custom-select">
+            <option value="">Seleccione...</option>
+                            <option value="01" >Enero</option>
+                            <option value="02" >Febrero</option>
+                            <option value="03" >Marzo</option>
+                            <option value="04" >Abril</option>
+                            <option value="05" >Mayo</option>
+                            <option value="06" >Junio</option>
+                            <option value="07" >Julio</option>
+                            <option value="08" >Agosto</option>
+                            <option value="09" >Septiembre</option>
+                            <option value="10" >Octubre</option>
+                            <option value="11" >Noviembre</option>
+                            <option value="12" >Diciembre</option>
+                    </select>
+        <div class="invalid-feedback">
+            Elija el mes de pago de colegiatura o mes actual        </div>
+    </div>
+</div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        Generar Boleta                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>        </div>
+
+        <script type="text/javascript" src="https://uvirtual.umg.edu.gt/pagos/assets/jquery.js"></script><script type="text/javascript" src="https://uvirtual.umg.edu.gt/pagos/assets/popper.js"></script><script type="text/javascript" src="https://uvirtual.umg.edu.gt/pagos/assets/bootstrap.js"></script><script type="text/javascript" src="https://uvirtual.umg.edu.gt/pagos/assets/jquery.mask.js"></script><script type="text/javascript" src="https://uvirtual.umg.edu.gt/pagos/assets/app.js"></script>    </body>
+</html>
